@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizzeria!</title>
+    <link rel="stylesheet" href="css/pizzeria.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 id="top">Welcome to Pizzeria!</h1>
+            </div> 
+            <div class="col-sm-6">
+                <p>Please login!</p>
+                <form>
+                    Username:
+                    <input type="text" name="username">
+
+                    Password:
+                    <input type="text" name="username">
+                    <!--submit button-->
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="containimages">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/boyeating.png" class="img" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img src="images/funky pizza.jpg" class="img" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img src="images/girleating.png" class="img" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="containcomm">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Check out this commercial!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yunwTSfbAyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="row">
+            <div class="col-sm-12">
+            <h2>Ordering:</h2>
+                <form>
+                    <p>Please select your preffered delivery method:</p>
+                    <div>
+                        <input type="radio" id="carryout">
+                        <label for="carryout">Carryout</label>
+
+                        <input type="radio" id="delivery">
+                        <label for="delivery">Delivery</label>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">1 Single or Double Pizza</li>
+                        <li class="price">$10.99</li>
+                        <li>toppings of your choice</li>
+                        <li>up to 2 medium drinks</li>
+                        <li>salad bar</li>
+                        <li class="price"><a href="#" class="button"> Quick Order</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="sizes">Select size</label>
+                    <select name="sizes" id="size">
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                        <option value="xtralarge">xtra large</option>
+                    </select>
+                </div>
+                
+
+                <div>
+                    <select name="topping" multiple size="5">
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="beef">Beef</option>
+                        <option value="sausage">Sausage</option>
+                        <option value="ham">Ham</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="onions">Onions</option>
+                        <option value="black olives">Black Olives</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="mushroom">Mushroom</option>
+                        <option value="bacon">Bacon</option>
+                    </select>
+                </div>
+                
+
+                <textarea name="special" id="" cols="30" rows="10">Please leave any special instructions for your order!</textarea>
+
+                <a href="#top">Back to top</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
